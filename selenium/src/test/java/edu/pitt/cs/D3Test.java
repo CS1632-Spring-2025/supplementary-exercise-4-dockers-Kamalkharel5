@@ -257,7 +257,7 @@ public class D3Test {
 
  @Test
  public void tEST11GREETACATWITHNAME() {
-   driver.get("\"http://localhost:8080/greet-a-cat/Jennyanydots");
+   driver.get("http://localhost:8080/greet-a-cat/Jennyanydots");
    {
      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
      wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#greeting > h4")));
