@@ -65,7 +65,7 @@ public class D3Test {
 //      String attribute = element.getAttribute("href");
 //      vars.put("resetHref", attribute);
 //    }
-//    assertEquals(vars.get("resetHref").toString(), "https://cs1632.appspot.com/reset");
+//    assertEquals(vars.get("resetHref").toString(), "http://localhost:8080/reset");
 //  }
 
 
@@ -109,7 +109,7 @@ public class D3Test {
      String attribute = element.getAttribute("src");
      vars.put("image", attribute);
    }
-   assertEquals(vars.get("image").toString(), "https://cs1632.appspot.com/images/cat2.jpg");
+   assertEquals(vars.get("image").toString(), "http://localhost:8080/images/cat2.jpg");
  }
 
 
@@ -257,7 +257,7 @@ public class D3Test {
 
  @Test
  public void tEST11GREETACATWITHNAME() {
-   driver.get("https://cs1632.appspot.com/greet-a-cat/Jennyanydots");
+   driver.get("\"http://localhost:8080/greet-a-cat/Jennyanydots");
    {
      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
      wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#greeting > h4")));
@@ -305,7 +305,7 @@ public class D3Test {
 //  public void dEFECT3FUNGREETACAT() {
 //    driver.get("http://localhost:8080/");
 //    js.executeScript("document.cookie = \"1=true\";document.cookie = \"2=false\";document.cookie = \"3=false\";");
-//    driver.get("https://cs1632.appspot.com//greet-a-cat/Jennyanydots");
+//    driver.get("http://localhost:8080//greet-a-cat/Jennyanydots");
 //    {
 //      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 //      wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/div[2]")));
